@@ -30,7 +30,8 @@ def Binary(x) -> Union[bytearray, bytes]: ...
 def Connect(*args, **kwargs) -> Connection: ...
 def get_client_info() -> str: ...
 
-connect = ...  # type: Any
+connect = ...  # type: Callable[..., Connection]
+
 
 version_info = ...  # type: Tuple[int, int, int, str, int]
 NULL = ...  # type: str
