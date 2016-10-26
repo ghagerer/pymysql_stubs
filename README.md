@@ -9,6 +9,6 @@ Regarding typeshed issue:
 - https://github.com/python/typeshed/issues/631
 
 
-# Notes #
+## Notes ##
 
 Since I am new to all this I would be glad to hear some feedback about the work and if there's an option to get this included in future versions of typeshed. Moreover I invite everybody to help me to improve the stubs, especially since it's my first contribution.
