@@ -8,3 +8,7 @@ Permission to be added to typesafe:
 Regarding typeshed issue:
 - https://github.com/python/typeshed/issues/631
 
+
+## Notes ##
+
+Since I am new to all this I would be glad to hear some feedback about this work. Moreover, I invite everybody to help me to improve the stubs, especially since it's my first contribution.
