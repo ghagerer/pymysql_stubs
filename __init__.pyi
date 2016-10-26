@@ -16,15 +16,15 @@ paramstyle = ...  # type: str
 class DBAPISet(frozenset):
     def __ne__(self, other) -> bool: ...
     def __eq__(self, other) -> bool: ...
-    def __hash__(self): ...
+    def __hash__(self) -> int: ...
 
-STRING = ...  # type: Any
-BINARY = ...  # type: Any
-NUMBER = ...  # type: Any
-DATE = ...  # type: Any
-TIME = ...  # type: Any
-TIMESTAMP = ...  # type: Any
-ROWID = ...  # type: Any
+STRING = ...  # type: DBAPISet
+BINARY = ...  # type: DBAPISet
+NUMBER = ...  # type: DBAPISet
+DATE = ...  # type: DBAPISet
+TIME = ...  # type: DBAPISet
+TIMESTAMP = ...  # type: DBAPISet
+ROWID = ...  # type: DBAPISet
 
 def Binary(x) -> Union[bytearray, bytes]: ...
 def Connect(*args, **kwargs) -> Connection: ...
@@ -37,10 +37,3 @@ version_info = ...  # type: Tuple[int, int, int, str, int]
 NULL = ...  # type: str
 
 def install_as_MySQLdb() -> None: ...
-
-# Names in __all__ with no definition:
-#   __version__
-#   connections
-#   constants
-#   converters
-#   cursors
